@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Country Resercher</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
+  <body class="bg-dark text-white">
+    <nav class="navbar bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="img/Logo.svg" alt="Bootstrap" width="100">
+    </a>
+  </div>
+</nav>
+    <h1 class="text-center">Research your country</h1>
+    <div class="container input-group mb-3">
+        <input id="country" type="text" class="form-control" placeholder="Country name..." aria-label="Recipient's username" aria-describedby="button-addon2">
+        <button onclick="search()" class="btn btn-primary" type="button" id="button-addon2"><strong>Research</strong></button>
+    </div>
+
+    <div id="card" class="card container text-center" style="width: 18rem;">
+        <br>
+        <img id="flag" src="" class="card-img-top">
+        <div class="card-body">
+          <h4 class="card-title" id="nameI" ></h4>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><strong>Capital:</strong><br> <p id="capI"></p></li>
+          <li class="list-group-item"><strong>Continent:</strong><br> <p id="contI"></p></li>
+          <li class="list-group-item"><strong>Population:</strong><br> <p id="popI"></p></li>
+        </ul>
+      </div>
+      <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
